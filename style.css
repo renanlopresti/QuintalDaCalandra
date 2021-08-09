@@ -1,0 +1,209 @@
+
+/*Cabecalho da Pagina*/
+header{
+	background: #1E90FF;
+	padding: 20px 0;
+	font-family: 'Lobster', cursive;
+}
+
+.cabecalho{
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+#logo{
+	width:200px;
+}
+
+nav{
+	position: absolute;
+	top: 110px;
+	right: 0;
+}
+
+nav li {
+	display: inline-block;
+	margin: 0 0 0 30px;
+	box-sizing: border-box;
+	border: solid;
+	border: 2px solid #000000;
+	border-radius: 10px;
+	background: #FFD700;
+}
+
+nav a{
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 30px;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #FFA500;
+}
+
+/*Conteudo*/
+
+/*quem somos*/
+.quem-somos {
+	position: relative;
+	width: 100%;
+	margin: 0;
+	padding: 30px 0;
+	background: #FFE4B5;
+}
+
+.titulo-quem{
+	font-weight: bold;
+	text-align: center;
+	padding: 40px 0;
+	font-size: 2em;
+}
+
+.quem-somos p {
+	padding: 50px 0;
+	font-size: 25px;
+}
+
+.foto1{
+	width: 400px;
+	float: left;
+	margin: 0 80px;
+	box-shadow: 10px 10px 10px 0 #000000;
+	border: 8px solid #FFD700;
+}
+
+
+/*como funciona*/
+.como-funciona {
+	position: relative;
+	width: 100%;
+	margin: 0;
+	padding: 30px 0;
+	background: #FFE4B5;
+}
+
+.titulo-como {
+	font-weight: bold;
+	text-align: center;
+	padding: 40px 0;
+	font-size: 2em;
+}
+
+.como-funciona p {
+	margin: 0 80px;
+	padding: 50px 0;
+	font-size: 25px;
+}
+
+.foto2 {
+	width: 300px;
+	float: right;
+	margin: 0 80px;
+	box-shadow: 10px 10px 10px 0 #000000;
+	border: 8px solid #FFD700;
+}
+
+/*festas infantis*/
+.festas-infantis {
+	position: relative;
+	width: 100%;
+	margin: 0;
+	padding: 30px 0;
+	background: linear-gradient(#FFE4B5,#FFFFFF)
+}
+
+
+.titulo-festas {
+	font-weight: bold;
+	text-align: center;
+	padding: 40px 0;
+	font-size: 2em;
+}
+
+.festas-infantis p {
+	padding: 50px 0;
+	font-size: 25px;
+}
+
+.foto3 {
+	width: 400px;
+	float: left;
+	margin: 0 80px;
+	box-shadow: 10px 10px 10px 0 #000000;
+	border: 8px solid #FFD700;
+}
+
+/*como chegar*/
+.como-chegar {
+	width: 100%;
+}
+
+.titulo-chegar {
+	font-weight: bold;
+	text-align: center;
+	padding: 40px 0;
+	font-size: 2em;
+}
+
+.mapa{
+	width: 60%;
+	padding: 0 20%;
+}
+
+/*contato*/
+.contato {
+	width: 100%;
+	padding: 20px 0;
+}
+
+.titulo-contato {
+	font-weight: bold;
+	text-align: center;
+	padding: 40px 0;
+	font-size: 2em;
+}
+
+.rede-social {
+	display: inline-block;
+	width: 5%;
+	margin: 0 5%;
+
+}
+
+#primeiro-logo{
+	padding: 0 0 0 27%;
+}
+/*rodape*/
+
+.logo-rodape {
+	width: 20%;
+	padding: 0 40%;
+}
+
+
+/*para celulares*/
+
+@media screen and (max-width: 480px) {
+	.cabecalho, .quem-somos, .como-funciona, .festas-infantis, .como-chegar, .contato, .logo-rodape{
+		width: auto;
+	}
+
+	h1 {
+		text-align: center;
+	}
+	nav {
+		position: static;
+	}
+	p {
+	font-size: 10px
+	}
+	.titulo-quem, .titulo-como, .titulo-festas, .titulo-chegar, .titulo-contato{
+	font-size: 14px
+	}
+	li {
+		font-size: 40px;
+	}
+}
